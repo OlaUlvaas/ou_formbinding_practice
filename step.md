@@ -1,12 +1,4 @@
 
-
-
-
-
-Box with @Entity Annotation
-Annotations on every variable in the field
-@Data on the Class
-
 Database Configuration
 BoxRepository Interface
 boxRepository DI in ShippingController
@@ -29,7 +21,10 @@ Add Thymeleaf to the html pages, CustomerController with
 @Controller Annotation, showCustomerForm() and getAll()
 RequestMapping annotation and addCustomer()
 ---------------------------------------------------------------
-
+Customer and CustomerDetails with @Entity Annotation, 
+@Data on the Classes, Annotations on every variable in 
+the field
+---------------------------------------------------------------
 
 
 
