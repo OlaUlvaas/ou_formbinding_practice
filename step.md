@@ -1,8 +1,4 @@
 
-Database Configuration
-BoxRepository Interface
-boxRepository DI in ShippingController
-
 Add Content and Form to boxForm.html 
 
 Put Action to boxForm.html with Thymeleaf
@@ -25,7 +21,9 @@ Customer and CustomerDetails with @Entity Annotation,
 @Data on the Classes, Annotations on every variable in 
 the field
 ---------------------------------------------------------------
-
+Database Configuration, BoxRepository Interface
+boxRepository DI in ShippingController
+---------------------------------------------------------------
 
 
 
