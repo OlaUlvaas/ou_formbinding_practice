@@ -1,13 +1,3 @@
-
-
-
-Put Action to boxForm.html with Thymeleaf
-Validation Annotation on the field in BoxRepository
-
-Save to DB 
-
-Print out from DB
-
 ---------------------------------------------------------------
 Add Bootstrap Dependencies, Build Project Structure With
 customerForm.html, customerList.html, controller, entity and 
@@ -24,7 +14,10 @@ the field
 Database Configuration, BoxRepository Interface
 boxRepository DI in ShippingController
 ---------------------------------------------------------------
-Add Content and Form to customerForm.html 
-
+Add Content and Form to customerForm.html
 
 ---------------------------------------------------------------
+Put Action to boxForm.html with Thymeleaf
+Save to DB , Only Validation message left
+---------------------------------------------------------------
+

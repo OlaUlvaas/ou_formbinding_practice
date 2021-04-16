@@ -14,6 +14,41 @@
     </style>-->
 </head>
 <body>
+<div class="container">
+    <div class ="card bg-light">
+        <div class="card-header">
+            <a href="/customaising/addForm" class="btn btn-outline-info">ADD CUSTOMER</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-secondary table-striped">
+                <thead>
+                <tr >
+                    <td>Email</td>
+                    <td>Street</td>
+                    <td>ZipCode</td>
+                    <td>City</td>
+                    <td>HomePhone</td>
+                    <td>CellPhone</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="cst : ${customers}">
+                    <td><span th:text="${cst.email}"></span></td>
+                    <td><span th:text="${cst.details.street}"></span></td>
+                    <td><span th:text="${cst.details.zipCode}"></span></td>
+                    <td><span th:text="${cst.details.city}"></span></td>
+                    <td><span th:text="${cst.details.homePhone}"></span></td>
+                    <td><span th:text="${cst.details.cellPhone}"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <a href="/customaising/addForm" class="btn btn-outline-secondary">BACK</a>
 
+        </div>
+    </div>
+
+</div>
 </body>
 </html>

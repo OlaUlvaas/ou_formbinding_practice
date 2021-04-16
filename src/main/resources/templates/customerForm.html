@@ -21,39 +21,57 @@
             <h2>Add Customer</h2>
         </div>
         <div class="card-body">
-            <form>
+            <form th:action="@{/customaising/add}" method="post" th:object="${cst}">
                 <div class="col-sm-3">
                     <div class="form-group">
                         <label>EMAIL: </label>
-                        <input type="text" placeholder="Enter Email Here..." class="form-control">
+                        <input type="text" th:field="*{email}" placeholder="Enter Email Here..." class="form-control">
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
                     </div>
                     <div class="form-group">
                         <label>STREET: </label>
-                        <input type="text" placeholder="Enter StreetName Here..." class="form-control">
+                        <input type="text" th:field="*{details.street}" placeholder="Enter StreetName Here..." class="form-control">
+
+<!--
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('street')}" th:errors="*{details.street}"></p>
+-->
+
                     </div>
                     <div class="form-group">
                         <label>ZIP CODE: </label>
-                        <input type="text" placeholder="Enter Zip Code Here..." class="form-control">
+                        <input type="text" th:field="*{details.zipCode}" placeholder="Enter Zip Code Here..." class="form-control">
+<!--
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('details.zipCode')}" th:errors="*{details.zipCode}"></p>
+-->
                     </div>
                     <div class="form-group">
                         <label>CITY: </label>
-                        <input type="text" placeholder="Enter City Here..." class="form-control">
+                        <input type="text" th:field="*{details.city}" placeholder="Enter City Here..." class="form-control">
+<!--
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('details.city')}" th:errors="*{details.city}"></p>
+-->
                     </div>
                     <div class="form-group">
                         <label>HOME PHONE: </label>
-                        <input type="text" placeholder="Enter Home Phone Here..." class="form-control">
+                        <input type="text" th:field="*{details.homePhone}" placeholder="Enter Home Phone Here..." class="form-control">
+<!--
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('details.homePhone')}" th:errors="*{details.homePhone}"></p>
+-->
                     </div>
                     <div class="form-group">
                         <label>CELL PHONE: </label>
-                        <input type="text" placeholder="Enter Cell Phone Here..." class="form-control">
+                        <input type="text" th:field="*{details.cellPhone}" placeholder="Enter Cell Phone Here..." class="form-control">
+<!--
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('details.cellPhone')}" th:errors="*{details.cellPhone}"></p>
+-->
                     </div>
                     <hr>
-                    <button type="submit" class="btn btn-primary btn-block mb-3">SAVE</button>
+                    <button href="/customaising/add" type="submit" class="btn btn-primary btn-block mb-3">SAVE</button>
                 </div>
             </form>
         </div>
         <div class="card-footer">
-            <button type="submit" class="btn btn-outline-secondary">BACK</button>
+            <button href="/customaising/add" type="submit" class="btn btn-outline-secondary">BACK</button>
         </div>
     </div>
 </div>
