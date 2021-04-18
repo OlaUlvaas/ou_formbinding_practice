@@ -32,9 +32,8 @@
                         <label>STREET: </label>
                         <input type="text" th:field="*{details.street}" placeholder="Enter StreetName Here..." class="form-control">
 
-<!--
-                        <p class="alert alert-danger" th:if="${#fields.hasErrors('street')}" th:errors="*{details.street}"></p>
--->
+                        <p class="alert alert-danger" th:if="${#fields.hasErrors('details.street')}" th:errors="*{details.street}"></p>
+
 
                     </div>
                     <div class="form-group">

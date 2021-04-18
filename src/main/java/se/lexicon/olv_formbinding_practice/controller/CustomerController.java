@@ -46,14 +46,14 @@ public class CustomerController {
 
 
     @PostMapping("/add")
-    public String addCustomer(@ModelAttribute("cst") @Valid Customer cst, BindingResult bindingResult){
-        System.out.println("Customer: = " + cst);
+    public String addCustomer(@ModelAttribute("cst") @Valid Customer customer, BindingResult bindingResult){
+        System.out.println("Customer: = " + customer);
 
         if(bindingResult.hasErrors()){
             return "customerForm";
         }
 
-        customerRepository.save(cst);
+        customerRepository.save(customer);
 
         return "redirect:/customaising/";
     }
